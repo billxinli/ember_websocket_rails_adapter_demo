@@ -1,5 +1,6 @@
 // http://emberjs.com/guides/models/using-the-store/
 
+
 RailsEmberWebsocketDemo.ApplicationSerializer = DS.ActiveModelSerializer.extend({
   // https://github.com/emberjs/data/pull/1273
   serializeHasMany: function (record, json, relationship) {

@@ -13,7 +13,7 @@ class Ws::V1::PostsController < WebsocketRails::BaseController
           status: 422,
           message: 'invalid post',
           params: message,
-          error: @post.errors
+          errors: @post.errors
 
         }
       )

@@ -12,3 +12,10 @@
 {{/each}}
 
 <button {{action 'create' post}}>Create</button>
+<p>Title error:
+  {{#each error in post.errors.title}}
+    {{error}}
+  {{/each}}
+</p>
+<p>Content error: {{post.errors.content.firstObject}}</p>
+

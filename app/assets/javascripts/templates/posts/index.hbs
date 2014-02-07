@@ -1,0 +1,14 @@
+<h1>Posts</h1>
+
+{{#each post in posts}}
+  <h2>
+    {{#link-to 'posts.show' post}}
+      {{post.title}}
+    {{/link-to}}
+  </h2>
+  <hr>
+  <p>{{post.content}}</p>
+  <br><br>
+{{/each}}
+
+<button {{action 'create' post}}>Create</button>

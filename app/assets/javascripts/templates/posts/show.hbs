@@ -1,0 +1,12 @@
+<h1>Post</h1>
+<h2>
+  {{#link-to 'posts.show' post}}
+    {{post.title}}
+  {{/link-to}}
+</h2>
+
+<hr>
+
+<button {{action 'edit' post}}>Edit</button>
+<button {{action 'delete' post}}>Delete</button>
+<p>{{post.content}}</p>
